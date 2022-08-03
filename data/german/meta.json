@@ -1,0 +1,24 @@
+{
+  "dir": "./data/german",
+  "train_path": "./data/german/german.data",
+  "idx_path": "./data/german/idx.json",
+  "target_feat": "credit",
+  "sensitive_feat": "age",
+  "column_names": "status,month,credit_history,purpose,credit_amount,savings,employment,investment_as_income_percentage,personal_status,other_debtors,residence_since,property,age,installment_plans,housing,number_of_credits,skill_level,people_liable_for,telephone,foreign_worker,credit",
+  "drop_feat": "personal_status",
+  "categorical_feat": "status,credit_history,purpose,savings,employment,other_debtors,property,installment_plans,housing,skill_level,telephone,foreign_worker,sex,credit",
+  "s_thr": [
+    30,
+    {
+      "larger": 1.0,
+      "smaller": 0.0
+    }
+  ],
+  "label_mapping": {
+    "credit": {
+      "1": 1.0,
+      "2": 0.0
+    }
+  },
+  "l2_reg": 5.84843
+}
